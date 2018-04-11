@@ -44,3 +44,34 @@ benutzer.bestzeit = 200;
 console.log(benutzer);
 benutzer["bestzeit ever"] = 100;
 console.log(benutzer);
+
+
+//Benutzer Eingabe
+//let alter = prompt("Wie alt bist du?");
+//console.log("Du bist ", alter, "Jahre alt");
+//console.log("Über 18?", alter > 18);
+//if (alter > 18) {
+//    console.log("Du darfst hinein...")
+//} else {
+//    console.log("noch nicht 18...")
+//}
+
+for (let i=1; i<10; i++) {
+    console.log("Wert von i: ", i);
+
+}
+
+function showAge(birthYear) {
+    let age = 2018 - birthYear;
+    console.log("Du bist ", age, "Jahre alt")
+}
+
+showAge(1992);
+showAge(1988);
+
+function calcAge(birthYear) {
+    return 2018 - birthYear;
+}
+
+console.log("Du bist ", calcAge(1980), "Jahre alt");
+console.log("und du ", calcAge(1997), "Jahre alt");
